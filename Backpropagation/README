@@ -1,0 +1,1 @@
+This script counts the additional number of cycles required in backpropagation compared to the forward pass. This takes account of the loss computation and gradient computation for the four Type A and four Type B datastes used in our experiment.
