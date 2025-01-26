@@ -1,0 +1,30 @@
+There are four scripts to count the number of execution cyles required for the Type B datasets.
+
+GAT_aggregation.py --> for GAT.
+GCN_aggregation.py --> for GCN.
+GINConv_aggregation.py --> for GINConv.
+SAGE_aggregation.py --> for GraphSGAE.
+
+We use the following 4 datasets for evaluation and they are given as input to the script in the following format.
+
+dataset_info = [
+
+
+		( 'amazon0505'               , 64	  , 22, 410236),
+ 		( 'com-amazon'               , 64	  , 22, 548552),
+ 		( 'soc-BlogCatalog'	         , 64    , 39, 88784), 
+		( 'amazon0601'  	         , 64	  , 22, 403394), 
+]
+
+Here the the list dataset_info is composed of 4 tuples for each dataset. Each tuple is in the following format (dataset_name, input fetaure length, fetaure length in the hidden layer, total vertices). For each dataset the sciprt will calculate the optimum number of feature segmenation and use the preprocessed data in the pickle format to count the number of cycles required for Aggregtion.
+
+
+
+
+
+
+
+
+
+
+
